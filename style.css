@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+
+}
+
+body{
+    background-color: rgba(2, 40, 62, 0.504);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1000px;
+
+}
+
+.container{
+    position: relative;    
+    width: 100%;
+    max-width: 1000px;
+    min-height: 900px;
+    margin: 50px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr  2fr;
+    box-shadow: 0 30 55 black;
+}
+
+.container-left{
+    position: relative;    
+    background-color: rgb(123, 5, 5);
+    padding: 40px;
+}
+
+.container-right{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+
+.foto-datos{
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+    
+}
+
+
+.foto-datos .foto{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(32, 30, 40);
+}
+
+.foto-datos .foto img{
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-datos .datos{
+    position: relative;
+    color: white;
+    margin-top: 10px;
+    
+}
+
+h2 span{
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.contact-info ul li{
+        list-style: none;
+        margin-top: 20px;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+    }
+
+.contact-info h3{
+    
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-right{
+    color: rgb(3, 39, 39);
+    min-width: 600px;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.tech{
+    font-weight: 600;
+    color: rgba(217, 11, 0, 0.737);
+}
+
+
+
+@media (max-width: 1000px ){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
